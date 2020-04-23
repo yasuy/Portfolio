@@ -1,0 +1,407 @@
+/*------          ------*/
+/*       CSS REST       */
+/*------          ------*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  font-size: 1.6em;
+  font-family: 'Saira Condensed', 'Muli', 'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  color: #333333;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove text decoration styles on a elements */
+a {
+  text-decoration: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  font-family: 'Saira Condensed';
+  font-weight: 700;
+  font-size: 9.6rem;
+}
+
+h2 {
+  font-family: 'Saira Condensed';
+  font-weight: 700;
+  font-size: 5.6rem;
+}
+
+h3 {
+  font-family: 'Saira Condensed';
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+#navbar {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 25%;
+  z-index: 999;
+  background-color: #795548;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#navbar-inner {
+  padding: 6rem 1.5rem 0;
+}
+
+#navbar-inner span {
+  color: #fff;
+  font-weight: bold;
+  display: none;
+}
+
+#navbar-inner .nav-unshown {
+  display: none;
+}
+
+#navbar-inner #navbar-img {
+  border-radius: 50%;
+  max-width: 60%;
+  border: 5px solid #5D4037;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 5rem;
+}
+
+#navbar-inner > #nav-content > ul > li {
+  margin-bottom: 3rem;
+}
+
+#navbar-inner > #nav-content > ul > li > a {
+  color: #fff;
+  font-family: Muli;
+  font-weight: 800;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+#navbar-inner > #nav-content > ul > li > a:hover {
+  opacity: 1;
+}
+
+#social-icons {
+  margin-top: 3rem;
+}
+
+#main-doc {
+  margin-left: 25%;
+}
+
+#main-inner {
+  margin: 5rem;
+}
+
+#welcome-section {
+  height: 100vh;
+  margin-bottom: 5rem;
+}
+
+#welcome-section a[href^="tel:"] {
+  pointer-events: none;
+}
+
+#welcome-section > p {
+  margin-bottom: 3rem;
+}
+
+#welcome-section span:not(first-child) {
+  margin-top: 1rem;
+}
+
+#headline {
+  color: #868e96;
+}
+
+#headline p:not(:first-child) {
+  margin-top: 0.6rem;
+}
+
+.fa-style {
+  font-size: 5rem;
+  color: #4CAF50;
+  margin-right: 2rem;
+  opacity: 0.8;
+}
+
+.fa-style:hover {
+  opacity: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 9.6rem;
+  color: #343a40;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 5.6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #343a40;
+}
+
+.contact-info {
+  color: #868e96;
+  font-family: 'Saira Condensed';
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+a[href^="mailto:"]:hover {
+  color: #bd5d38;
+}
+
+/* CARD */
+/*------          ------*/
+/*         CARD         */
+/*------          ------*/
+#card {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.3333%;
+          flex: 0 0 33.3333%;
+}
+
+.card-imageframe {
+  width: 100%;
+  height: auto;
+  padding-top: 56.25%;
+  background: url(https://placehold.jp/640x360.png) no-repeat center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-textbox {
+  width: 100%;
+  height: auto;
+  padding: 20px 18px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-textbox > * + * {
+  margin-top: 10px;
+}
+
+.project-tile {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 125%;
+}
+
+.project-link {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.cv-item, .uni-item, .awards-item, .skill-item {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  color: #343a40;
+}
+
+.cv-title, .uni-name, .uni-major, .awards-name {
+  color: #343a40;
+}
+
+.cv-date, .uni-date, .awards-date {
+  color: #868e96;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #bbb;
+}
+
+.anchor {
+  display: block;
+  padding-top: 15rem;
+  margin-top: -15rem;
+}
+
+/*------             ------*/
+/*       MEDIA QUERY       */
+/*------             ------*/
+@media (max-width: 768px) {
+  body {
+    display: block;
+  }
+  #navbar {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+  }
+  #navbar-inner {
+    padding: 1rem 1.5rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #navbar-inner > span {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 4.7rem;
+  }
+  .nav-unshown {
+    display: none;
+  }
+  #nav-open {
+    display: inline-block;
+    width: 3rem;
+    height: 2.2rem;
+    vertical-align: middle;
+    margin: 1rem;
+  }
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    display: block;
+    content: '';
+    cursor: pointer;
+  }
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  #nav-close {
+    display: none;
+    position: fixed;
+    z-index: 888;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: #fff;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translateY(-105%);
+    transform: translateY(-105%);
+  }
+  #nav-content > ul > li > a:hover {
+    opacity: 1;
+  }
+  #navbar-img {
+    display: none;
+  }
+  #main-doc {
+    width: 100%;
+    margin: 20rem 0 0 0;
+  }
+  #welcome-section a[href^="tel:"] {
+    pointer-events: auto;
+  }
+  .project-card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  #nav-input:checked ~ #nav-close {
+    display: block;
+    opacity: .5;
+  }
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+    display: block;
+    text-align: center;
+    background-color: #795548;
+  }
+}
+/*# sourceMappingURL=style.css.map */
